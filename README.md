@@ -6,6 +6,5 @@ The main directory structure is the following:
 	- *MASTER*
 	- *Other Versions*
 
-
 The other versions of my resume are subsets of the *MASTER* version of my resume 
 and are each shaped to match the position(s) I am applying for.
