@@ -1,5 +1,5 @@
 # INTEL
 
-## The folder structure is the following
+### The folder structure is the following
 
 [- *Position Title*]
