@@ -6,9 +6,12 @@
 \usepackage{lmodern}
 \usepackage{nopageno}
 \usepackage{indentfirst}
+\usepackage{enumitem}
+
+\setlist{nosep}
 
 \titleformat{\section}
-{\LARGE}
+{\centering\LARGE\bfseries}
 {}
 {0pt}
 {}[\titlerule]
@@ -59,64 +62,63 @@ high school.
 
 \section{Professional Experience}
 
-%\subsection{Target}
-%
-%Team Member
-%
-%Worked as a cashier at Target in the Tustin Marketplace.
-%
-
 \subsection{Skyworks Solutions, Inc. (June - Present)}
 
 \noindent\textit{Software Engineer Intern (Wafer Foundry Engineering)}
 
-Working as a software intern at the Wafer Foundry Engineering Group at Skyworks Solutions to 
-automate processes to speed up cycle time of mask production and trend analysis. This includes maintaining an internal website 
-created using C\# and ASP.NET to run Python scripts that access a MSSQL server and using shell scripting to automate other processes.
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Developing custom automation solutions to decrease cycle time of tapeout production
+	\item Maintaining a full stack web application that uses ASP.NET and C\# as a front end and Microsoft SQL Express and Python as a back end
+	\item Wrote a shell script automation that improved design efficiency by 80\%
+\end{itemize}
 
 \subsection{Axxiom Data, Inc. (May - September 2017)}
 
 \noindent\textit{Software Intern}
 
-Worked directly under the CEO of Axxiom Data to help develop new solutions within Axxiom's
-content management system, upkeep it's current websites, and prepare the system for future development. Learned about 
-the use of PHP in web application development and the Git VCS.
-
-\subsection{Invisible Touch Events (January - September 2017)} 
-
-\noindent\textit{Light/Audio Technician}
-
-Worked as a technician for an event planning company based in the Tustin area and helped research
-new lighting/audio solutions for events, troubleshoot electrical issues on the fly, and develop 
-connections with clients to maintain future business.
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Developed new features for Axxiom's content management system using PHP
+	\item Implemented an automation solution using Python to make the product creation process 180 times faster
+	\item Introduced Git to Axxiom and improved development time by leveraging its use
+\end{itemize}
 
 \section{Projects}
 
 \subsection{SystemVerilog RISC-V Processor (2019)}
 
-Designed a 5-stage pipelined processor in SystemVerilog utilizing SystemVerilog interfaces and other 
-SystemVerilog programming features. After designing the processor, I reworked parts of the processor 
-to be synthesizable; the synthesis ran at a clock speed of 3.8 ns (~260 MHz).
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Designed a 5-stage pipelined processor in SystemVerilog
+	\item Reworked the design code to synthesize a 260 MHz processor
+	\item Utilized Git version control to maintain and compare the pipelined and single-cycle design syntheses
+\end{itemize}
 
 \subsection{Python SoundCloud Scraper (2019)}
 
-Wrote a Python script that scraped SoundCloud's website and checked specific artists' profiles occasionally for new music uploads. 
-I would manually update the list of artists and the script would send me a text using an API called Twilio.
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Created and scheduled a CRON job to run a Python script to scrape the SoundCloud website
+	\item Utilized the Twilio API to send an SMS to myself whenever certain artists' uploaded new music
+\end{itemize}
 
 \subsection{Pure Lisp Interpreter (2019)}
 
-Wrote the evaluation function for Pure Lisp using Pure Lisp. This required recursion and the use of a global 
-association list to create the functionality of dynamic typing that is used in Lisp and many scripting languages today.
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Recreated the Pure Lisp interpreter using Pure Lisp (the eval() function)
+	\item Implemented dynamic typing using a global association list
+\end{itemize}
 
 \subsection{EthicsViz (2018)}
 
-Worked with a researcher on the University of California, Irvine campus to develop a system that analyzed 
-user's online data using platforms such as Google History, Spotify, and Google Maps. The system's goal was to present interesting correlations using users' online "footprint".  The system used D3.js, a JavaScript library for data-driven documents. 
-
-\subsection{Discrete Cosine Transform VHDL (2018)}
-
-Designed and simulated a Discrete Cosine Transform circuit using VHDL and Xilinx. The chip was designed to be 
-used for video compression. 
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Worked with a researcher on the University of California, Irvine campus to develop a system to analyze users' online data
+	\item Utilized the JavaScript library D3.js for data-driven documents
+	\item System was presented by the researcher at a data conference on the University of California, Irvine campus
+\end{itemize}
 
 \section{Other Experience}
 
@@ -124,17 +126,22 @@ used for video compression.
 
 \noindent\textit{Project Manager, Design Lead}
 
-Led a team in researching and compiling a 41 page research report detailing the implementation of an 
-autonomous vertical farm that utilized an evolutionary algorithm and a convolutional neural network 
-to improve biomass yield every iteration. The research report was published by the University of 
-California, Irvine and can be found on their eScholarship website.
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Led a team in researching and compiling a 41 page research report on the implementation of a machine learning artificial intelligence
+	\item Won the conference and had the report published by the University of California, Irvine
+\end{itemize}
 
 \subsection{Kappa Sigma Fraternity}
 
-\noindent\textit{Treasurer, Website Designer, Recruitment Chair}
+\noindent\textit{Vice President, Treasurer, Website Designer, Recruitment Chair}
 
-Organized biannual recruitment for three years, managed a yearly \$150,000 yearly budget, and designed 
-the chapter's website using HTML, CSS, and JavaScript.
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Organized biannual recruitment for three years
+	\item Managed a \$150,000 yearly budget
+	\item Designed the organization's website using HTML, CSS, and JavaScript
+\end{itemize}
 
 \section{Relevant Coursework}
 
@@ -149,7 +156,7 @@ the chapter's website using HTML, CSS, and JavaScript.
 
 \subsection{Languages}
 
-C, C++, C\#, Java, SQL, HTML, CSS, JavaScript, VBA, Lisp, Prolog, Python, \LaTeX
+Python, JavaScript, Node.js, HTML, CSS, Java, C, C++, C\#, SQL, \LaTeX
 
 \subsection{Tools}
 
