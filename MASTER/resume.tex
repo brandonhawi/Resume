@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[10pt]{article}
 
 \usepackage{titlesec}
 \usepackage{titling}
@@ -7,17 +7,27 @@
 \usepackage{nopageno}
 \usepackage{indentfirst}
 \usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+
+\hypersetup{
+	colorlinks = true,
+	urlcolor = coolblack,
+}
 
 \setlist{nosep}
 
 \titleformat{\section}
-{\centering\LARGE\bfseries}
+{\color{coolblack}\centering\large\bfseries}
 {}
 {0pt}
-{}[\titlerule]
+{}[\color{bleudefrance}\titlerule]
 
 \titleformat{\subsection}
-{\large\bfseries}
+{\bfseries}
 {}
 {0pt}
 {}
@@ -32,11 +42,11 @@
 \textbf{\theauthor}
 \small
 
-brandonhawi@jasonbusiness.com
+\textbf{Email Address: }\href{mailto:brandonhawi@jasonbusiness.com}{brandonhawi@jasonbusiness.com}
 
-www.github.com/brandonhawi
+\textbf{Phone Number: }(818) 855 - 0542
 
-(818) 855 - 0542
+\textbf{GitHub: }\href{https://github.com/brandonhawii}{Portfolio}
 \end{flushleft}
 }
 
@@ -129,7 +139,7 @@ high school.
 \begin{itemize}
 	\setlength\itemsep{0em}
 	\item Led a team in researching and compiling a 41 page research report on the implementation of a machine learning artificial intelligence
-	\item Won the conference and had the report published by the University of California, Irvine
+	\item Won the conference and had the report \href{https://escholarship.org/uc/item/3hm5q8b8}{published} by the University of California, Irvine
 \end{itemize}
 
 \subsection{Kappa Sigma Fraternity}
