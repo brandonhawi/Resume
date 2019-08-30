@@ -9,6 +9,7 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{multicol}
 
 \definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
 \definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
@@ -18,7 +19,7 @@
 	urlcolor = coolblack,
 }
 
-\setlist{nosep}
+\setlist{nosep, leftmargin=0.6cm}
 
 \titleformat{\section}
 {\color{coolblack}\centering\large\bfseries}
@@ -32,25 +33,20 @@
 {0pt}
 {}
 
-\titlespacing*{\section}{0pt}{0pt}{0.1in}
+\titlespacing*{\section}{0pt}{1mm}{0.1in}
 \titlespacing*{\subsection}{0pt}{0pt}{0in}
 
 \renewcommand{\maketitle}
 {
-\begin{flushleft}
 \huge
-\textbf{\theauthor}
-\small
+\noindent\textbf{\theauthor} \hfill \small{ \textbf{Email Address: }\href{mailto:brandonhawi@jasonbusiness.com}{brandonhawi@jasonbusiness.com}
 
-\textbf{Email Address: }\href{mailto:brandonhawi@jasonbusiness.com}{brandonhawi@jasonbusiness.com}
+\hfill \textbf{GitHub Profile: }\href{https://github.com/brandonhawi}{https://github.com/brandonhawi}
 
-\textbf{GitHub Profile: }\href{https://github.com/brandonhawi}{https://github.com/brandonhawi}
-
-\textbf{Phone Number: }(818) 855 - 0542
-\end{flushleft}
-}
+\hfill \textbf{Phone Number: }(818) 855 - 0542}}
 
 %\renewcommand{\familydefault}{cmvtt}
+\renewcommand\labelitemi{$\textendash$}
 
 \begin{document}
 
@@ -80,7 +76,7 @@ high school.
 	\setlength\itemsep{0em}
 	\item Developing custom automation solutions to decrease cycle time of tapeout production
 	\item Maintaining a full stack web application that uses ASP.NET and C\# as a front end and Microsoft SQL Express and Python as a back end
-	\item Wrote a shell script automation that improved design efficiency by 80\%
+	\item Improved design efficiency by 80\% by writing a shell script automation
 \end{itemize}
 
 \subsection{Axxiom Data, Inc. (May - September 2017)}
@@ -90,18 +86,18 @@ high school.
 \begin{itemize}
 	\setlength\itemsep{0em}
 	\item Developed new features for Axxiom's content management system using PHP
-	\item Implemented an automation solution using Python to make the product creation process 180 times faster
-	\item Introduced Git to Axxiom and improved development time by leveraging its use
+	\item Improved product creation speed by 180 times by implementing an automation solution using Python
+	\item Improved development time by introducing Git and leveraging its use
 \end{itemize}
 
 \section{Projects}
-
+%\begin{multicols}{2}
 \subsection{Yelp Clone (2019): \href{https://github.com/brandonhawi/YelpCamp}{Link}}
 
-\begin{itemize}
+\begin{itemize}[leftmargin=0.6cm]
 	\setlength\itemsep{0em}
 	\item Designed a full-stack application that replicates Yelp for campgrounds
-	\item Implemented using MongoDB, Express, and NodeJS
+	\item Implemented using MongoDB, Express.js, and Node.js
 	\item Features authentication, sessions, flash messages, and other features using various JavaScript packages
 \end{itemize}
 
@@ -138,7 +134,7 @@ high school.
 	\item Utilized the JavaScript library D3.js for data-driven documents
 	\item System was presented by the researcher at a data conference on the University of California, Irvine campus
 \end{itemize}
-
+%\end{multicols}	
 \section{Other Experience}
 
 \subsection{Engineering Conference UCI}
@@ -170,23 +166,14 @@ high school.
 Hyperledger, and ConsenSys
 \end{itemize}
 
-\section{Relevant Coursework}
-
-\begin{itemize}
-	\item[$-$] Three courses (one year) of Python coursework
-	\item[$-$] Three courses (one year) utilizing Unix server scripting
-	\item[$-$] One course in Databases utilizing SQL
-	\item[$-$] One semester of Proficiency in Microsoft Programs using VBA
-\end{itemize}
-
 \section{Technical Skills}
 
 \subsection{Languages}
 
-Python, JavaScript, Node.js, HTML, CSS, Java, C, C++, C\#, SQL, \LaTeX
+JavaScript, Python, SystemVerliog, Bash, HTML, CSS, Java, C, C++, C\#, SQL, \LaTeX
 
 \subsection{Tools}
 
-Unix, Linux, Xilinx, VHDL, MATLAB, Mathematica, ASP.NET
+Node.js, Express.js, MongoDB, Unix, Linux, Xilinx, VHDL, MATLAB, Mathematica, ASP.NET
 
 \end{document}
