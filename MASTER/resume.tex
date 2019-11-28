@@ -2,7 +2,7 @@
 
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[margin=0.3in]{geometry}
 \usepackage{lmodern}
 \usepackage{nopageno}
 \usepackage{indentfirst}
@@ -19,7 +19,10 @@
 	urlcolor = coolblack,
 }
 
-\setlist{nosep, leftmargin=0.6cm}
+\setlist{nosep, leftmargin=0.5cm}
+
+\setlength\columnsep{8pt}
+\setlength\multicolsep{0pt}
 
 \titleformat{\section}
 {\color{bleudefrance}\centering\large\bfseries}
@@ -41,7 +44,7 @@
 \huge
 \noindent\textbf{\theauthor} \hfill \small{ \textbf{Email Address: }\href{mailto:brandonhawi@jasonbusiness.com}{brandonhawi@jasonbusiness.com}
 
-\hfill \textbf{GitHub Profile: }\href{https://github.com/brandonhawi}{https://github.com/brandonhawi}
+\hfill \textbf{GitHub: }\href{https://github.com/brandonhawi}{https://github.com/brandonhawi}
 
 \hfill \textbf{Phone Number: }(818) 855 - 0542}}
 
@@ -66,21 +69,23 @@
 Obtained an Associate of Science Degree in Mathematics with honors while concurrently attending
 high school.
 
+\vfill
+
 \section{Professional Experience}
 
-\subsection{Skyworks Solutions, Inc. (June - Present)}
+\subsection{Skyworks Solutions, Inc. (June 2019 - Present)}
 
 \noindent\textit{Software Engineer Intern (Wafer Foundry Engineering)}
 
 \begin{itemize}
 	\setlength\itemsep{0em}
 	\item Developing custom automation solutions to decrease cycle time of tapeout production
-	\item Implemented best practices in the position such as Kanban, Agile epics and stories, and Continuous Integration to improve code quality and workflow
-	\item Maintaining a full stack web application that utilizes ASP.NET Core, MVC, Entity Framework Core, and C\#
+	\item Implemented best practices in the position such as Kanban, Agile epics and stories, and CI/CD to improve code quality and workflow
+	\item Maintaining a full stack web application and RESTful API that utilize ASP.NET Core, MVC, Entity Framework Core, and C\#
 	\item Improved design efficiency by 80\% by writing a shell script automation
 \end{itemize}
 
-\subsection{Axxiom Data, Inc. (May - September 2017)}
+\subsection{Axxiom Data, Inc. (May 2017 - September 2017)}
 
 \noindent\textit{Software Intern}
 
@@ -91,16 +96,38 @@ high school.
 	\item Improved development time by introducing Git and leveraging its use
 \end{itemize}
 
+\vfill
+
 \section{Projects}
-%\begin{multicols}{2}
+\begin{multicols}{2}
 \subsection{Yelp Clone (2019): \href{https://github.com/brandonhawi/YelpCamp}{Link}}
 
-\begin{itemize}[leftmargin=0.6cm]
+\begin{itemize}
 	\setlength\itemsep{0em}
 	\item Designed a full-stack application that replicates Yelp for campgrounds
 	\item Implemented using MongoDB, Express.js, and Node.js
 	\item Features authentication, sessions, flash messages, and other features using various JavaScript packages
 \end{itemize}
+
+\subsection{Car to Car Network (2019)}
+
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Creating a Car to Car network proof of concept using Arduinos, Zigbees, and RC cars
+	\item Writing a hardware abstraction layer to the Ardunio GPIO in C++ to make it easier to create the network
+	\item Following the IEEE 802.11p standard to synthesize a high quality end product
+\end{itemize}
+
+\subsection{Pure Lisp Interpreter (2019)}
+
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Recreated the Pure Lisp interpreter using Pure Lisp (the eval() function)
+	\item Implemented dynamic typing using a global association list
+\end{itemize}
+
+\vfill\null
+\columnbreak
 
 \subsection{SystemVerilog RISC-V Processor (2019)}
 
@@ -119,14 +146,6 @@ high school.
 	\item Utilized the Twilio API to send an SMS to myself whenever certain artists' uploaded new music
 \end{itemize}
 
-\subsection{Pure Lisp Interpreter (2019)}
-
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item Recreated the Pure Lisp interpreter using Pure Lisp (the eval() function)
-	\item Implemented dynamic typing using a global association list
-\end{itemize}
-
 \subsection{EthicsViz (2018): \href{https://pervade.umd.edu/}{Link}}
 
 \begin{itemize}
@@ -135,16 +154,44 @@ high school.
 	\item Utilized the JavaScript library D3.js for data-driven documents
 	\item Sponsored by the National Science Foundation to investigate pervasive data ethics
 \end{itemize}
-%\end{multicols}	
+\end{multicols}
+
+\vfill	
+
 \section{Other Experience}
 
-\subsection{Engineering Conference UCI: \href{https://escholarship.org/uc/item/3hm5q8b8}{Link}}
+\begin{multicols}{2}
+
+\subsection{SD Hacks 2019 - Spotify Mood Ring: \href{http://spotifymoodring.herokuapp.com/}{Link}}
+
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Designed a web application using Node.js, Express.js, EJS, and Bootstrap 4
+	\item Application consumes the Spotify API and requests the user's top songs, related artists, and acoustic information for the songs
+	\item Created a display page which plots the user's top songs using Chart.js according to danceability, valence, and popularity
+\end{itemize}
+
+\vfill
+
+\subsection{UCI Blockathon 2018}
+
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item Engaged in multiple workshops setting up and using blockchain platforms presented by companies such as nem, 
+Hyperledger, and ConsenSys
+\end{itemize}
+
+\vfill\null
+\columnbreak
+
+\subsection{Engineering Conference UCI 2019 - Published Paper: \href{https://escholarship.org/uc/item/3hm5q8b8}{Link}}
 
 \noindent\textit{Project Manager, Design Lead}
 
 \begin{itemize}
 	\setlength\itemsep{0em}
-	\item Led a team in researching and compiling a 41 page research report on the implementation of a machine learning artificial intelligence
+	\item Led a team in researching and compiling a 41 page research report on the implementation of an automated greenhouse 
+	\item Researched and described a convolutional neural network that would increase crop yield every iteration
 	\item Won the conference and had the report published by the University of California, Irvine
 \end{itemize}
 
@@ -159,22 +206,14 @@ high school.
 	\item Designed the organization's website using HTML, CSS, and JavaScript
 \end{itemize}
 
-\subsection{UCI Blockathon}
+\end{multicols}
 
-\begin{itemize}
-	\setlength\itemsep{0em}
-	\item Engaged in multiple workshops setting up and using blockchain platforms presented by companies such as nem, 
-Hyperledger, and ConsenSys
-\end{itemize}
+\vfill
 
 \section{Technical Skills}
 
-\subsection{Languages}
+\subsection{Languages: \normalfont{JavaScript, Python, Perl, Java, SystemVerliog, Bash, HTML, CSS, C, C++, C\#, SQL, \LaTeX}}
 
-JavaScript, Python, Perl, Java, SystemVerliog, Bash, HTML, CSS, C, C++, C\#, SQL, \LaTeX
-
-\subsection{Tools}
-
-Node.js, Express.js, MongoDB, Unix, Linux, Xilinx, VHDL, MATLAB, Mathematica, ASP.NET
+\subsection{Tools: \normalfont{Node.js, Express.js, MongoDB, Unix, Linux, Xilinx, VHDL, MATLAB, Mathematica, ASP.NET}}
 
 \end{document}
